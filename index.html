@@ -9,6 +9,8 @@
     <meta name="description"
         content="AuraStudio builds custom high-performance websites and AI-powered business automations designed to help businesses attract leads and grow.">
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -984,7 +986,12 @@
                 </div>
 
 
-                <form id="contact-form" class="space-y-6">
+                <form id="contact-form" class="space-y-6"
+                    action="https://formsubmit.co/laibapafaftab@gmail.com" method="POST">
+
+                    <input type="hidden" name="_subject" value="New inquiry from AuraStudio site">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
 
                     <div class="grid sm:grid-cols-2 gap-6">
 
@@ -996,6 +1003,7 @@
 
                             <input
                                 type="text"
+                                name="Name"
                                 required
                                 placeholder="Your name"
                                 class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-indigo-500 transition">
@@ -1011,6 +1019,7 @@
 
                             <input
                                 type="email"
+                                name="Email"
                                 required
                                 placeholder="you@example.com"
                                 class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-indigo-500 transition">
@@ -1027,6 +1036,7 @@
                         </label>
 
                         <select
+                            name="Service"
                             class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-4 text-slate-300 focus:outline-none focus:border-indigo-500">
 
                             <option>Website Development</option>
@@ -1047,6 +1057,7 @@
                         </label>
 
                         <textarea
+                            name="Message"
                             rows="5"
                             required
                             placeholder="Tell me about your project, goals, pages, features, etc."
@@ -1066,6 +1077,11 @@
                     </button>
 
                 </form>
+
+                <p class="text-center text-slate-500 text-sm mt-6">
+                    Or email me directly at
+                    <a href="mailto:laibapafaftab@gmail.com" class="text-indigo-400 hover:underline">laibapafaftab@gmail.com</a>
+                </p>
 
             </div>
 
@@ -1096,16 +1112,16 @@
 
             <div class="flex gap-5 text-slate-500">
 
-                <a href="#" class="hover:text-indigo-400 transition">
+                <a href="https://www.linkedin.com/in/laiba-aftab-211705420/" target="_blank" rel="noopener" class="hover:text-indigo-400 transition">
                     <i class="fa-brands fa-linkedin text-lg"></i>
                 </a>
 
-                <a href="#" class="hover:text-indigo-400 transition">
+                <a href="https://github.com/laibapafaftab-debug" target="_blank" rel="noopener" class="hover:text-indigo-400 transition">
                     <i class="fa-brands fa-github text-lg"></i>
                 </a>
 
-                <a href="#" class="hover:text-indigo-400 transition">
-                    <i class="fa-brands fa-instagram text-lg"></i>
+                <a href="mailto:laibapafaftab@gmail.com" class="hover:text-indigo-400 transition">
+                    <i class="fa-solid fa-envelope text-lg"></i>
                 </a>
 
             </div>
@@ -1145,19 +1161,6 @@
                 mobileMenu.classList.add("hidden");
 
             });
-
-        });
-
-
-        // Contact form
-
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-
-            e.preventDefault();
-
-            alert("Thanks! Your project inquiry has been received. I'll get back to you soon.");
-
-            this.reset();
 
         });
 
