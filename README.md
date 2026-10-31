@@ -2,7 +2,7 @@
 
 Web apps and AI automation, built and deployed by Laiba Aftab.
 
-**Live site:** https://laibapafaftab-debug.github.io/custom-web-demo/
+**Live site:** https://laibapafaftab-debug.github.io/auranova-digital/
 
 ## What this is
 
